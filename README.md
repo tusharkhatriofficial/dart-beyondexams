@@ -1,15 +1,15 @@
 # Next Steps
 
-The next video will teach you all about dart programming language. Steps to follow along with watching the videos are as follows:
+The next video will cover the Dart programming language. Follow these steps to learn alongside the video:
 
-- Fork this repo `https://github.com/tusharkhatriofficial/dart-beyondexams`
-- Copy the link of forked repo 
-- Go to your terminal and run `git clone https://github.com/tusharkhatriofficial/dart-beyondexams`
-- Open the cloned folder in your editor 
-- Run `git branch yourname` in the root of the cloned project
-- Navigatoe to this new branch using `git checkout yourname`
-- Create a file called `yourname.md`
-- Write docs of every topic your learn from the dart course as you progresss throughout the week
-> Use the timestamps as headings
-- Use `git add .` => `Git commit -m "Descriptive Message"` => `git push -u origin main`
-- Go to the forked repo and open a Merge request.
+1. Fork this repo `https://github.com/tusharkhatriofficial/dart-beyondexams`
+2. Copy the link of forked repo 
+3. Go to your terminal and run `git clone forkedrepolink`
+4. Open the cloned folder in your editor 
+5. Run `git branch yourname` in the root of the cloned project
+6. Navigate to this new branch using `git checkout yourname`
+7. Create a file called `yourname.md`
+8. Throughout the week, document each topic you learn from the Dart course, Use the timestamps to frame headings
+9. Use `git add .` => `Git commit -m "Descriptive Message"` => `git push -u origin main`
+10. Go to the forked repo and open a Merge request.
+11. Repeat step 8 to 10.
