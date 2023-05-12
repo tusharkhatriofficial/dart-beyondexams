@@ -11,5 +11,5 @@ The next video will cover the Dart programming language. Follow these steps to l
 7. Create a file called `yourname.md`
 8. Throughout the week, document each topic you learn from the Dart course, Use the timestamps to frame headings
 9. Use `git add .` => `Git commit -m "Descriptive Message"` => `git push -u origin main`
-10. Go to the forked repo and open a Merge request.
+10. Go to the forked repo and open a Pull request.
 11. Repeat step 8 to 10.
