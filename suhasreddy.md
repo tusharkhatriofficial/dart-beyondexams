@@ -1,29 +1,23 @@
-# heading 1
-## heading 2
+# All about Dart
 
-__Italics__
+Dart is an open-source object-oriented programming language with c-style syntax which was developed by **Google in 2011**
 
-**Strong**
+It is Focused on **frontend**(mobile,web apps) **user interface**(UI) development. 
 
-~~10000~~ **9999**
+void main(){
+    for(int i=0; i<5; i++){
+        print('hellow ${i + 1}');
+    }
+}
 
-Links
-[Visit website](https://learncodeonline.in "LCO")
+# Benefits of Dart
 
-Images
-![LCO Mascot](https://learncodeonline.in/mascot.png "LCO")
+* Use of async and awit for asynchronous programming.
 
-USe `for` loop
+* Dart is one of very few languages(and perhaps the only "mainstream" language) that is well suited to being complied both **AOT(ahead-of-time)** and **JIT(just-in-time)**. Supporting both kinds of compliation provides significant advantages to Dart and (especialy) Flutter (**Hot Reload Feature**)
 
-```javascript
-var name = "hitesh";
-console.log(name)
+* JIT compilation is used during development, using a complier that is especially fast
 
-```
-Tables
+* Extremely fast development cycles, and fast execution and startup times
 
-| Table | Goes  | Here  |
-| ----- | ----- | ----- |
-| one   | two   | three |
-
->Keep smiling and work harder
+* Flutter doesnt split layout between your program and an additional templating or layout language like JSM or XML, nor does it require separate visual layout tools
