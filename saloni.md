@@ -46,6 +46,61 @@ void main() {                 // main function from where the execution starts o
 }
 ```
 Note : Dart is a mixture of JavaScript, Java & CScript
+
+# Video-3
+**Class? Object?** in Dart.
+**For class**
+ Basically, class in dart is a blueprint or template that defines the structure and behavior of objects.
+
+ **Syntax:**
+ ```
+ class Doll {    //class is a keyword & Doll is a identifier.
+
+  Doll();       //Constructor
+ }
+ ```
+ These can be included in class :
+ |**Constructor** |
+ |**Function**    |
+ |**Fields**      |
+ |**Members**     |
+***
+ **For object**
+ Objects are basic building blocks of dart programming.
+ **To create object**
+ ```
+ var Saloni = new Doll();
+ ```
+ **Note:**
+ * **New version** says without new keyword we can make object of class.
+ * **new** : It is a runtime allocation.
+ 
+ Example:
+```
+  void main() {                
+    print("Welcome to AMC");    
+    stdout.write("Enter your name"); 
+    var name = stdin.readLineSync(); 
+    print("Welcome, $name");
+
+    Doll();             //Creating an class object.
+}
+class Doll {
+  Doll(); 
+}
+```
+  
+
+
+
+
+
+
+
+
+
+
+
  
 
 
