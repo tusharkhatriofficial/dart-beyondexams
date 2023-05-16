@@ -89,7 +89,8 @@ class Doll {
   Doll(); 
 }
 ```
-#Video-4
+ # Video-4
+***
 _**Variables and  Datatypes**_
 ---
 **Let's know about what is variable? & why do we need variable?**
@@ -126,6 +127,64 @@ int? a;  //it can be nullable.
 print(a);  //error is gone.
 ```
 ---
+# Video-5
+# Dart var Vs Dynamic - Differences
+**Main difference**
+String value multiple times we can assign in variable 
+but
+In dynamic, as many time we want we can store multiple types of datatypes in that variable or also can override it multiple times in that particular runtime.
+
+**Let's go in deep for more clarification.**
+Let's take an example:
+```
+void main () {
+  print("Welcome to NewWorld!");
+
+  //var
+  var subject = "English"; //we maynot even mention var here. "English" identify the 1st value it got is string.
+
+  subject = 7; //This will show error as with the 1st value i.e. "English" it will assign that what is the datatype of this particular var.
+}
+```
+**Variable means we can vary, if we want we can overrise values in it. Short form of it is var.**
+
+---
+Another example:
+```void main() {
+  print("Welcome to NewWorld!");
+
+  //var
+  var section;      //when we declared this var we couldn't initialize any value at that time so by default datatype becomes dynamic.
+                    //We can write dynamic too in place of var. 
+                    //It will work same as var.
+
+  section = "A";
+
+  section = 2;     //we can only assign integer value as 2 is an integer so cannot store another datatype.
+  
+
+  section = true;
+
+  var rollno = 82;
+
+  rollno = 16;
+}
+```
+In the above program, we wrote var to know the difference, when we are not giving any datatype through var, then we take only var   & with var creating a variable initially not giving it any value. Just declared it so, the variable type becomes dynamic.
+
+**For more information,**
+When the values are coming from server or through API we don't know the datatype but we still need to store it.
+So, the type of data will be assigned in it for the first time at that time only if any value we are assigning together then that var becomes as the same type as the data is.
+
+
+
+
+
+
+
+
+
+
 
 
   
