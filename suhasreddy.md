@@ -84,6 +84,43 @@ class ClassName {
 var object_name = new class_nsme(<constructor_arguments>);
 
 
+# Dart Data Types
+
+# Number	
+**Keyword**-int, double, num	
+**Function**-Numbers in Dart are used to represent numeric literals
+
+# Strings	
+**Keyword**-String	
+**Function**-Strings represent a sequence of characters
+
+# Booleans	
+**Keyword**-bool	
+**Function**-It represents Boolean values true and false
+
+# Lists	
+**Keyword**-List	
+**Function**-It is an ordered group of objects
+
+# Maps	
+**Keyword**-Map	
+**Function**-It represents a set of values as key-value pairs
+
+# Variables
+
+* A variable name is the name assign to the memory location where the user stores the data and that data can be fetched when required with the help of the variable by calling its variable name.
+
+__Syntax__- to declare variable
+
+    type variable_name;
+
+__Syntax__: to declare multiple variabels of same type:
+
+    type variable1_name, variable2_name, variable3_name,......variableN_name;
+
+
+
+
 
 
 
