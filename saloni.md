@@ -176,6 +176,113 @@ In the above program, we wrote var to know the difference, when we are not givin
 When the values are coming from server or through API we don't know the datatype but we still need to store it.
 So, the type of data will be assigned in it for the first time at that time only if any value we are assigning together then that var becomes as the same type as the data is.
 
+***
+# Video-6
+# Functions? and their use in Dart.
+-> We can call it method or function.
+**Roles:**
+* We use it to reduce the redundancy of class.
+* To increase the reusability we use class.
+* Anything can be executed 10 times or more by writing the function only once.
+Any code which is reusable in that particular class, we can define it in a function & where that set of instruction is needed then there we can call function.
+
+Things to be known,
+-**Functions made are function declaration.**
+-**Set of instruction written in it is function definition.**
+-**In main program when the function is called is    called function calling.**
+
+Showing how to make function,
+```
+void main() {
+  print("Welcome to myworld");
+
+}
+
+void myFunc() {  //function name must be unique to be uniquely identified.
+
+}
+```
+Example for **Declaration & Definition**
+```
+void main() {
+  print("Welcome to myworld!");
+
+  var myW = myWorld()
+  myW.printName();      //Creating object of the class.
+                        //Function inside the class.
+                        //It is function calling.
+}
+class myWorld {
+  void printName() {     //Declaration
+                         //It doesn't return anything as we had kept void there.
+                         //The code inside this function will come into execution.
+    print("Web Tech");    //Definition
+                          //Called as definition where we define logic of that function.
+  }
+}
+```
+**We have given only one line definition here but where 4 lines or 6 lines are in use then in that case we have to use function.**
+**Functions with different values**
+```
+void main() {
+  print("Welcome to myworld!");
+
+  var myW = myWorld()
+  myW.printName("web dev");     //fun with diff values.
+  //
+  //                          //set of codes.
+  //
+  myW.printName("Flutter");    //fun with diff values.
+  //
+  //
+  //
+  myW.printName("Saloni");     //fun with diff values.
+}
+
+class myWorld {
+  void printName(String name) {
+    print(name);
+  }
+}
+```
+**When we call printName it takes us to 
+void printName(String name) <-- this String
+the name gets printed where inside name we have "web dev".So, it will print that & similarly others.**
+
+-Adding two integers.
+-print statement displayed.
+-myWorld class created whose constructor has been called & then the value was been printed which was 
+Welcome to myWorld!
+```
+void main() {
+  print("Welcome to myworld!");
+
+  var myW = myWorld()
+  
+  print(myW.Add(4,5));
+
+}
+class myWorld {
+  myWorld() {                //Default Constructor
+    print("myWorld object created!");
+  }
+  void printName(String name) {   //Declaration
+    print(name);                  //Definition
+  }
+  int Add(int no1, int no2) {
+    int sum = mo1+no2;
+    return sum;
+  }
+}
+```
+Output:
+Welcome to myWorld!
+myWorld object created!
+9
+
+
+
+
 
 
 
