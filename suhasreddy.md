@@ -119,6 +119,14 @@ __Syntax__: to declare multiple variabels of same type:
     type variable1_name, variable2_name, variable3_name,......variableN_name;
 
 
+# Difference between var and dynamic in Dart
+
+* If you use var when you need to change your variable data Type with the passage of time, suppose first you store a string in a var data type then you have to store an int value in the same data type, You cannot achieve this thing with var.
+
+* If a variable is declared as dynamic you can change its type anytime.
+
+but if a variable is declared with var keyword and have an initial value its type cant be changed else if its not intialized you can change its DataType anytime too.
+
 
 
 
