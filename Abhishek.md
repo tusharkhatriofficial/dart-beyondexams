@@ -56,3 +56,62 @@ class Animal {
 **new** is a run time allocatiom
 
 ---
+# Variables & DataTypes in Dart
+- **variable** is memory location having name which stores some data. it stores the value in runtime.
+- **DataType** refers which type of data will be stored by the variable.
+## common datatype
+**Integer**: it stores integer value like, 3,4,5,4564...
+**double**: it stores float value like: 3.4,5.55555...
+**big Int**: it stores big integer value like:123456789098...
+**String**: it stores alpha numeric values.
+**collection**:it stores multiple value together.
+**bool**:it stores either true or false.
+
+In one variable, if we want to store same value or multiple values then we use **collection**.
+
+**Example**
+```dart
+//Declaration of variable
+int? a;
+//?: it says value can be nullable
+a = 5;// 5 is assign to a
+//when you dont assign the value to variable then it will be showing null.
+print (a);
+a = 7;// Updating the value 
+print (a);
+//inline declaration
+String name = "Abhi";
+
+BigInt longValue = BigInt.parse('234567890123476');
+print(longValue);
+double percentage = 99.65;
+num percentage = 99.65;// Num can be used for both integer and double values.
+bool isLogin = false;
+isLogin = true; 
+```
+
+---
+#Var & Dynamic
+```dart
+var subject = "maths";
+subject = "English";
+// Here We did not say explictly that the value assigned is String.
+//so, VAR identifies with the frist letter which type of data is stored and accordingly it will assign the datatypes.
+
+var rollno = 11;
+rollno = 56;
+// same goes for integer value too.
+
+var subject;
+// Here we did not assign any values so, it becomes dynamic datatype.
+// That means in Run time as per our choice, We can assign datatype to that variable.
+
+section = "D";
+
+section = "7";
+
+section = "false";
+
+// So, With help of dynamic datatypes, we can store multiple type datatypes in a single variable
+```
+---
