@@ -187,3 +187,55 @@ void main() {
 
 ___
 
+### _**WHAT ARE FUNCTIONS?**_
+
+- Function is a set of statements that take inputs, do some specific computation and produces output.
+-  Functions are created when certain statements are repeatedly occurring in the program and a function is created to replace them. 
+- Functions make it easy to divide the complex program into smaller sub-groups and increase the code reusability of the program.
+
+```dart
+
+return_type function_name ( parameters ) {
+   // Body of function
+   return value;
+}
+```
+- In the above syntax: 
+
+  - function_name defines the name of the function.
+  -  return_type defines the datatype in which output     is going to come.
+  -  return value defines the value to be returned from the function.
+
+- The function is called as: 
+```dart
+function_name (argument_list);
+```
+
+- In the above syntax: 
+
+     - function_name defines the name of the function.
+     - argument list is the list of the parameter that the function requires.
+
+**Example:**
+
+```dart
+
+int add(int a, int b)
+{
+	// Creating function
+	int result = a + b;
+	// returning value result
+	return result;
+}
+
+void main()
+{
+	// Calling the function
+	var output = add(10, 20);
+
+	// Printing output
+	print(output);
+}
+```
+
+___
