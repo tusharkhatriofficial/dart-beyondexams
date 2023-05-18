@@ -115,3 +115,50 @@ section = "false";
 // So, With help of dynamic datatypes, we can store multiple type datatypes in a single variable
 ```
 ---
+# Functions in Dart
+- **Function** linked with a well- defined task.
+#####problem facing without function
+- code is becoming bulky.
+- we can not reuse the code.
+- Buggyness(Error in one place, it will show everywhere)
+- No Readability.
+
+**Function** solve all these problems.
+
+**example**
+```dart
+void main(){
+    var myC = myclass();// it is a constructor
+    myC.printName(Abhishek);
+    //set of codes
+    //set of codes
+    myC.printName(flutter);
+    //set of code
+    //set of code
+    myC.printName(Mern Stack)
+}
+class myclass(){
+    void printName(String name){// Function Declaration
+        print(name);// Function Definition
+    }
+}
+```
+**Another example**
+```dart
+int main(){
+    var myC = myclass();
+    print(myC.Add(10,20));
+    //set of codes
+    print(myC.Add(100,200));
+}
+class myclass(){
+    myclass(){
+        print("My class object is created!");
+    }
+    int Add(int num1, int num2){
+        int sum= num1+num2;
+        return sum;
+        //below return statement code will not execute.
+    }
+    
+}
