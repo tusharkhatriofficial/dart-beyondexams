@@ -126,9 +126,30 @@ __Syntax__: to declare multiple variabels of same type:
 * If a variable is declared as dynamic you can change its type anytime.
 
 but if a variable is declared with var keyword and have an initial value its type cant be changed else if its not intialized you can change its DataType anytime too.
+ 
+# Dart Functions
 
+* Function is a set of statements that take inputs, do some specific computation and produces output. 
 
+* Functions make it easy to divide the complex program into smaller sub-groups and increase the code reusability of the program.
 
+__Syntax__: 
 
+```dart
+return_type function_name ( parameters ) {
+   // Body of function
+   return value;
+}
+```
+* Basically, there are four types of functions in Dart. 
 
+These are as follows:
+
+* No arguments and no return type : Basically in this function, we do not give any argument and expect no return type.
+
+* With arguments and no return type : Basically in this function, we do not give any argument but expect a return type. 
+
+* No arguments and return type : Basically in this function, we are giving an argument and expect no return type. 
+
+* With arguments and with return type : Basically in this function, we are giving an argument and expect return type.
 
