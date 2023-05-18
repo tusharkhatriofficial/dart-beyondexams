@@ -279,8 +279,78 @@ Output:
 Welcome to myWorld!
 myWorld object created!
 9
+***
+# Video-7
+# List In Dart.
+We manage list in dart similar to array where we store similar order of elements, data, object, etc.
 
+**List:** Collection of multiple data where multiple data can be similar type data or different type of data, collection of data.
 
+**The syntax of declaring the list as given below:**
+
+var[list] = [10, 20, 30, 40, 50]
+
+The dart list is defined by storing all elements inside the bracket([]) & separated by commas (,).
+
+**List in Dart**
+                               
+0_____1____2____3____4________Index
+| 10 | 20 | 30 | 40 | 50 |         
+|--- |--- |--- |--- |--- |
+__________________________Elements
+
+**Example:**
+```
+import'package:flutter/Cupertino.dart';
+main() {
+  var ListNo = [10,20,30,40];       //We can take similar data but there's no such conditions so we can take multiple data too.
+  ListNames.add(50);
+
+  print("$ListNames");
+}
+```
+Output:
+[10,20,30,40,50]
+
+To Insert:
+names.insert(2, 100);
+
+Add, Insert role:
+names.insert(2, 100);
+names.insertAll(3, ListNo);
+
+O/p:
+[Ram, Sita, 100, 10, 20, 30, 40, 50, Gita, Rosy]
+
+To update any index:
+names[2] = "Geetu"
+
+Replace:
+```
+import'package:flutter/Cupertino.dart';
+main() {
+  var ListNo = [10,20,30,40];       //We can take similar data but there's no such conditions so we can take multiple data too.
+  ListNames.add(50);
+
+  print("$ListNames");
+}
+print("$ListNo");
+ListNo.replaceRange(0, 3,[1, 2, 3, 4,]);
+
+print("$ListNo");
+```
+O/p:
+[10, 20, 30, 40, 50]
+[1, 2, 3, 4, 40, 50]
+
+Remove:
+```
+ListNo.removeLast();  //will remove last no.
+ListNo.remove(20);    //will remove only 20.
+ListNo.removeAt(1);    //will remove 1st index no. 20.
+ListNo.removeRange(0, 4);  //It will delete upto [10, 20, 30, 40]. It will not delete upto 4th element, it will just delete elements before 4.
+```
+***
 
 
 
