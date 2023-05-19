@@ -351,6 +351,97 @@ ListNo.removeAt(1);    //will remove 1st index no. 20.
 ListNo.removeRange(0, 4);  //It will delete upto [10, 20, 30, 40]. It will not delete upto 4th element, it will just delete elements before 4.
 ```
 ***
+# Video-8
+# Maps & HashMaps in Dart Programming.
+Maps -> Locks & Keys
+Locks -> data
+keys -> key of data
+
+* No restriction on what type of integer we are going to store.
+* Multiple datatypes data we can store here.
+* We can add finite data through the program.
+No limitation on adding data.
+* Cannot open more no. of locks with a single key.
+If we are doing so we are wrong!
+* **Key must be unique for each lock.**
+
+We can place multiple values in this way,
+
+**var map_name = {key1:value1, key2:value2, ...keyn}**
+
+Representation of map is in this way,
+```
+main()
+
+var map_name = {
+  'key1':'value1',
+  'key2': 2,
+  'key3': 3.0,
+  'key4': true
+};
+ print(map_name);
+
+```
+Output:
+{key1: value1, key2:2, key3:3.0, key4:true}
+
+To print key value we use,
+
+print(map_name['key2']);
+output:
+2
+
+When do we use the **Json** in the map, when we will make our map dynamic in Flutter.
+Here, role of Jason increases, whenever the **API** is formed.
+
+**What is API?**
+For example, when you are executing the login code through our app, the user will enter his login-password and so soon as he taps on login.
+If the login-password is correct, then the login will be done otherwise the message will be generated.
+
+**What is happening behind the scene?**
+We will take the username and password values from the textfield and both these values will go to the server along with API.
+There is a database of the user on the server, from which it will be checked whether the username and password exist.
+
+If username and password match, then we get **True** in response & if it doesn't match then we get **False** in response.If we get false then whatever message we get, we will print that message 'password incorrect'/'username incorrect'/'incorrect credentials'.
+
+The API design will say along with the username key we give the value of username and with the password key we give the value of password.
+
+**This will be in so much use when we do development in Flutter application.**
+
+```
+main() {
+
+  var mapName = Map();
+
+  mapName['Name'] = "Saloni";
+  mapName['YearOfexperience'] = 1; 
+  mapName['Avg,Rating'] = 3.0;
+  mapName['CanLocateToOffice'] = true;
+
+  print(mapName.isNotEmpty);  
+  print(mapName.isEmpty);
+  print(mapName.length);
+  print(mapName.keys);
+  print(mapName.values);
+  print(mapName.containKey('Name'));
+  print(mapName.containsValue(false));
+  print(mapName.remove('CanLocateToOffice'));
+  print(mapName);
+}
+```
+Output:
+false
+4
+(Name, YearOfExperience, Avg.Rating, CanLocateToOffice)
+(Raman, 1, 3.0, true)
+true
+false
+true
+{Name: Saloni, YearOfExperienxe: 1, Avg.Rating: 3.0}
+
+
+
+
 
 
 
