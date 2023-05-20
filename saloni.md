@@ -297,7 +297,8 @@ The dart list is defined by storing all elements inside the bracket([]) & separa
 0_____1____2____3____4________Index
 | 10 | 20 | 30 | 40 | 50 |         
 |--- |--- |--- |--- |--- |
-__________________________Elements
+
+10,20,30,40,50 are elements
 
 **Example:**
 ```
@@ -438,6 +439,152 @@ true
 false
 true
 {Name: Saloni, YearOfExperienxe: 1, Avg.Rating: 3.0}
+***
+# Video-9
+# final Vs const
+
+**final**
+```
+void main() {
+
+  print("Welcome to dart!");
+
+  final name = "Saloni";  //Can't resign this variable throughout the lifetime of this variable.
+
+  name = "Kriti";    //error-> final name can only be set once.
+  ~~~~
+}
+```
+**const**
+```
+void main() {
+   print("Welcome to dart!");
+
+  const name = "Saloni";  //when we take const variable then its mandatory to initialize it at the same time.
+
+
+}
+```
+If it is const then inside it the variable is also constant.
+final means we cannot override it but we can make changes in the data. 
+Compiletime changes we can do but can't reassign.
+But, in const we cannot even do compiletime changes.
+***
+
+# Video-10
+# Conditional programming in Dart
+Conditional programming in Dart, like in many other programming languages, involves using conditional statements to make decisions and execute different blocks of code based on certain conditions. Dart provides several conditional statements to facilitate this.
+
+The most commonly used conditional statement in Dart is the if statement. It allows you to execute a block of code if a specified condition is true. Here's the basic syntax:
+
+```
+if (condition) {
+  // code to be executed if the condition is true
+}
+```
+You can also extend the if statement with an else clause to provide an alternative block of code to execute when the condition is false:
+```
+if (condition) {
+  // code to be executed if the condition is true
+} else {
+  // code to be executed if the condition is false
+}
+```
+Dart offers the switch statement, which is useful when you have a single expression that you want to compare against multiple values:
+```
+switch (expression) {
+  case value1:
+    // code to be executed if expression matches value1
+    break;
+  case value2:
+    // code to be executed if expression matches value2
+    break;
+  // more cases...
+  default:
+    // code to be executed if expression doesn't match any case
+}
+```
+Within each case, you can include multiple statements, and the break statement is used to exit the switch statement once a case is matched.
+***
+# Video-11
+# Loops In Dart
+```
+import 'dart:io';
+
+   main() {
+     
+     for(int b=0; b<=10; b++) {
+      print("Hello friends!");
+
+     }
+   }
+```
+Output:
+Hello friends!
+Hello friends!
+Hello friends!
+Hello friends!
+Hello friends!
+Hello friends!
+Hello friends!
+Hello friends!
+Hello friends!
+Hello friends!
+
+for loop
+contions:
+-> initialization
+-> Till when it is going to run.
+-> Incrementation or Decrementation
+
+When condition is **true** it will keep on executing.
+**false** means it will terminate.
+
+We have dowhile and while loop.
+
+**dowhile loop**
+do-while loop is a type of loop that executes a block of code at least once, and then repeatedly executes the block as long as a specified condition is true. The condition is checked after the execution of the block.
+```
+void main() {
+  int count = 1;
+
+  do {
+    print('Count: $count');
+    count++;
+  } while (count <= 5);
+}
+```
+Output:
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
+
+**while loop**
+
+while loop is a type of loop that repeatedly executes a block of code as long as a specified condition is true. The condition is checked before the execution of the block.
+```
+void main() {
+  int count = 1;
+
+  while (count <= 5) {
+    print('Count: $count');
+    count++;
+  }
+}
+```
+Output:
+Count: 1
+Count: 2
+Count: 3
+Count: 4
+Count: 5
+
+***
+
+
+
 
 
 
