@@ -162,3 +162,93 @@ class myclass(){
     }
     
 }
+```
+---
+#List In Dart
+**Dart List** is similar to an array, which is the ordered collection of the objects.
+
+- The array is the most popular and commonly used collection in any other programming languages.
+- The syntax of declaring the list is given below:
+var list1= [10,20,30,40,50];
+- The dart list is defined by storing all elements inside the same bracket [] and seprated by commas.
+### add & add All
+```dart
+main(){
+    var listNames = [10,20,30,40];
+    listNames.add(50);
+    //add: At runtime, it will add in list, it will add element at the end of list.
+    //Normal or blanklist
+    var names = [];
+    names.add All (listnames);
+    add All: A function which add the all item of list and print after giving print statement.
+    //IN list we can store different type of datatypes
+    names.add("Ramesh");
+    names.add("Suresh");
+    names.add("Abhishek");
+    print ("$names");
+ 
+}
+```
+### insert & insert All
+```dart
+var listno = [10,20,30,40];
+var names =[];
+names.insert(2,100);
+//insert: Here in 3rd position of list 100 will be add.
+//Bascially, wiht the help of isert we can add the value in whatever position in list.
+names.insert All(3, list no);
+//values will be inserted and then further or below things will be added.
+names.add ("Ramesh");
+names.add ("gamesh");
+names.add ("Aamesh");
+print("$names");
+```
+
+### update
+```dart
+main(){
+    var names = [];
+    names.add ("Abhi");
+    names.add ("Ramanujan");
+    names.add ("Aahan");
+    names.add ("Rakesh");
+    print("$names");
+    names[3]= "Suresh";
+    //In 4th position of list name Rakesh will be updated to suresh.
+    print("$names");
+}
+```
+### Replace
+```dart
+main(){
+    var listno = [10,20,30,40];
+    listno.add(50);
+    print("$listno");
+    listno.replace Range (0,3,[1,2,3,4]);
+    // it means the value will be replace in list at index(0-3)
+    print ("$listno");
+}
+```
+### Remove
+```dart
+var listno = [10,20,30,40];
+
+listno.remove last();
+//it will remove at index of list
+listno.remove(40);
+// value 40 will be removed from list 
+// value must be present in list.
+listno.remove At(1);
+// it will remove the value between this range
+```
+### Some important operation 
+```dart
+print ("Length: ${listno.length}");
+print ("Reversed: ${listno.reversed}");
+print ("First: ${listno.length}");
+print ("last: ${listno.length}");
+print ("Is Empty: ${listno.length}");
+print ("It Not Empty : ${listNo. is not Empty}");
+print ("2nd index element: ${listno.elementA(2)}");
+```
+---
