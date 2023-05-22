@@ -252,3 +252,136 @@ print ("It Not Empty : ${listNo. is not Empty}");
 print ("2nd index element: ${listno.elementA(2)}");
 ```
 ---
+# Maps and Hash Maps in Dart
+- In Dart programmming, Maps are dictionary like data types that exist in key-value form (known as lock-key)
+- There is no restriction on the type of data that goes in a  Map data type.
+- Maps are very flexible and can mutate their size based on the requirements.
+- It is important to note that all locks(keys) need to be unique in a map datatype.
+
+var map_name = {key1:value1,key2:value2...,keyn:valuen}
+**Example**
+```dart
+ main(){
+var map_name={
+    'Key1':'value1';
+    'Key1':'value1';
+    'Key1':'value1';
+    'Key1':'value1';
+};
+
+print(map_name);
+print(map_name['Key2']);
+}
+```
+**Another Example**
+```dart
+main(){
+    var map_name={
+        'Name':'value',
+        'age':23,
+        'Stream':'ISE',
+    };
+    map_name['Name']='Abhishek';
+    //Name key will be assigned with value Abhishek
+    print(map_name);
+}
+```
+- When we know What kind of keys and value we want to store then use literals method to create map.
+- When we want to give the keys and value At Runtime then create map by using Constructor.
+
+**Basic Function provided by Map**
+```dart
+print(mapName.isNotEmpty);
+print(mapName.isEmpty);
+print(mapName.length);
+print(mapName.Keys);
+print(mapName.values);
+print(mapName.ContainsKey('Name'));
+print(mapName.Containsvalue(false));
+print(mapName.remove('stream'));
+print(mapName);
+```
+---
+#Final And Const Keyword in Dart
+- In **Final**, Through out the lifetime of variable, We can not override the value then use final keyword.
+- Once value will be final then, it can't be changed.
+```dart
+void main(){
+    final name = "Abhishek";
+    name = "purbey";// We can not override the name of variable
+}
+```
+- while using **Const** variable, it's mandatory that, it should initialized at that time only means At complie time.
+```dart
+void main(){
+    const name = "Abhishek";
+    name = "Ajay";// We can not override the name of variable.
+}
+```
+### Difference between final and const
+- The final keyword in Dart is used to create constants or objects that are immutable in nature. The only difference between the final and const keyword is that final is a runtime-constant, which in turn means that its value can be assigned at runtime instead of the compile-time that we had for the const keyword.
+```dart
+final names = [
+    "Abhishek",
+    "Aman",
+    "Abhi",
+    "Sobit",
+];
+names.add("peter");
+// Value will be added in list At Runtime
+// so, with final keyword, we can add,remove the value at run time but we cant override the varibale names.
+```
+```dart
+const names = [
+    "Abhishek",
+    "Aman",
+    "Abhi",
+    "Sobit",
+];
+names.add("peter");
+// value cant be added in list at runtime because we made the list constant with the help of const keyword so,we cant modify the value at runtime.
+```
+---
+# Conditional Programming in Dart
+- If the Boolean expression evaluates to be true, then the if block of code will be executed, otherwise else block of code will be executed.
+- The following illustration shows the flowchart of the if…else statement.
+![Home](https://www.tutorialspoint.com/dart_programming/images/if_else_statement.jpg)
+```dart
+main(){
+    var a = 500;
+    var b = 50;
+    if(a>200 && b>100){
+        print ("Block 1");
+    }
+    else if(a>50){
+        print("Block 2");
+    }
+    else if(a>80){
+        print("Block 3");
+    }
+    else{
+        print("Block Else");
+    }
+}
+```
+---
+# Loops in Dart
+- At times, certain instructions require repeated execution. Loops are an ideal way to do the same. A loop represents a set of instructions that must be repeated. In a loop’s context, a repetition is termed as an iteration.
+
+The following figure illustrates the classification of loops:
+![Home](https://www.tutorialspoint.com/dart_programming/images/classification_of_loops.jpg)
+```dart
+for(int a=1; a<=10; a++){
+    print("Hello World");
+}
+
+int no = 100;
+do{
+    print("No is $no");
+}while(no<50);
+
+while(no<50){
+    print("No is $no");
+}
+```
+---
