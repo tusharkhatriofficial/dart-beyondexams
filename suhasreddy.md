@@ -153,3 +153,67 @@ These are as follows:
 
 * With arguments and with return type : Basically in this function, we are giving an argument and expect return type.
 
+# List in Dart
+
+* Dart List is similar to an array, which is the ordered collection of the objects. 
+
+* The array is the most popular and commonly used collection in any other programming language
+
+* The syntax of declaring the list
+      *var list1 = [10,20,30,40,50]*
+
+* The Dart list is defined by storing all elements inside the square bracket ([]) and separated by commas (,).
+
+void main() {   
+   var list1 = new List(5);   
+   list1[0] = 10;   
+   list1[1] = 11;   
+   list1[2] = 12;   
+   list1[3] = 13;  
+   list1[4] = 14;    
+   print(list1);   
+}
+
+*Output*
+
+[10,11,12,13,14]
+
+# Maps and in dart
+
+* In Dart programming, Maps are dictionary-like data types that exist in key-value form (known as lock-key).
+
+* There is no restriction on the type of data that goes in a map data type.
+
+* Maps are very flexible and can mutate their size based on the requirements.
+
+* It is important to note that all locks(keys) need to be *unique* 
+
+   var map_name = {key:1 value1, key2:value2,.....keyn:valuen}
+
+main() {
+    
+    var map_name = {
+        'Name':'Value1',
+        'YearOfExperience': 2,
+        'Avg.Rating': 3.0,
+         'CanLocateToOffice': true,
+    };
+
+    map_name['Name'] = 'Raman';
+    print(map_name);
+}
+
+# Difference between final and const
+
+* The final keyword is used to hardcode the values of the variable and it cannot be altered in future, neither any kind of operations performed on these variables can alter its value (state).
+
+// Without datatype
+final variable_name;
+
+// With datatype
+final data_type  variable_name;
+
+* The Const keyword in Dart behaves exactly like the final keyword. 
+* The only difference between final and const is that the const makes the variable constant from compile-time only. 
+* Using const on an object, makes the object’s entire deep state strictly fixed at compile-time and that the object with this state will be considered frozen and completely immutable.
+
