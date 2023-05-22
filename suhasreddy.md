@@ -217,3 +217,70 @@ final data_type  variable_name;
 * The only difference between final and const is that the const makes the variable constant from compile-time only. 
 * Using const on an object, makes the object’s entire deep state strictly fixed at compile-time and that the object with this state will be considered frozen and completely immutable.
 
+# Conditional Programming in Dart
+
+* Conditional in programming handles decision and performs specific actions, if the specified conditions are met.
+
+* The following are the forms of conditional in Dart Programming:
+
+     if statement: 
+     if … else statement
+     if … else if … statement
+     switch statement
+     nested statement
+
+* An if can be followed by an optional else block. The else block will execute if the Boolean expression tested by the if block evaluates to false.     
+
+main(){
+    var a = 100;
+
+    if(a>200){
+      //Cond 1 is true
+    } else if(a<50){
+      //Cond 2 is true
+    } else if(a>80){
+      //Cond 3 is true
+    } else {
+      //all Cond are false
+    }
+}
+
+# Loops in Dart
+
+*For loops*
+* You can iterate with the standard for loop. For example:
+
+var message = StringBuffer('Dart is fun');
+for (var i = 0; i < 5; i++) {
+  message.write('!');
+}
+* Closures inside of Dart’s for loops capture the value of the index.
+
+*While and do-while*
+A while loop evaluates the condition before the loop:
+
+while (!isDone()) {
+  doSomething();
+}
+A do-while loop evaluates the condition after the loop:
+
+do {
+  printLine();
+} while (!atEndOfPage());
+
+*Break and continue*
+Use break to stop looping:
+
+while (true) {
+  if (shutDownRequested()) break;
+  processIncomingRequests();
+}
+Use continue to skip to the next loop iteration:
+
+for (int i = 0; i < candidates.length; i++) {
+  var candidate = candidates[i];
+  if (candidate.yearsExperience < 5) {
+    continue;
+  }
+  candidate.interview();
+}
